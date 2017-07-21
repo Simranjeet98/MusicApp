@@ -13,6 +13,8 @@ body {
     font-size: 16px;
 }
 
+
+
 h1 {
     border: 0;
     margin: 0;
@@ -24,6 +26,32 @@ h1 {
     background-color: #BBB;
 }
 
+.effct {
+
+    
+    width: 100%;
+    background-color:  #1f1f1f;
+	position:absolute;
+	top:160px;
+}
+
+.next{
+margin:-50px 0px 0px 0px;
+position:absolute;
+top:60px;
+left:800px;
+width:90%
+
+
+
+}
+#back{
+margin:-10px 0px 0px 0px;
+position:absolute;
+top:-90px;
+left:60px;
+}
+
 .welcome-screen {
     height: 100%;
     width: 100%;
@@ -31,7 +59,12 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	background:url("http://deepanshusaini.com/wp-content/uploads/2015/06/music.png");
+	color:yellow;
+	font-size:30px;
+	background-size:cover;
 }
+
 
 .main {
     width: 100%;
@@ -65,7 +98,10 @@ h1 {
     font-size: 1.5rem;
     justify-content: center;
     align-items: center;
+	background-color: #282828;
 }
+
+
 
 .hidden {
     display: none;
@@ -88,6 +124,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .progress-wrapper span {
@@ -114,6 +151,7 @@ h1 {
 .main .content {
     width: 800px;
     margin: 2rem auto;
+	
 }
 
 .list-headers {
@@ -159,8 +197,65 @@ h1 {
 .song-list .song:hover {
     background-color: #282828;
 }
-
+.border {
+    border: 3px solid red;
+	
+	}
 
 .song-length {
     text-align: right;
 }
+.content {
+    position: relative;
+}
+.current-song-wrapper {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.current-song-image {
+    height: 100px;
+    width: 100px;
+    margin-right: 1rem;
+}
+
+.current-song-name {
+    font-size: 1.4rem;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.current-song-album {
+    margin-top: 0.4rem;
+}
+  /*DataTables overrides*/
+table.dataTable tbody tr {
+    background-color: initial;
+}
+#songs_info {
+    display: none;
+}
+
+#songs_filter {
+    color: transparent;
+}
+#songs_filter input {
+    width: 400px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+	border-radius: 10px;
+}
+input:focus {
+    outline:none !important;
+	
+}
+        
+.player-buttons .fa {
+    margin-right: 2rem;
+}
+
+.fa.disabled {
+    color: gray;
+}
+
